@@ -1,0 +1,6 @@
+detailView:
+  - label: "지역코드 조회"
+    displayType: textField
+    textField:
+      command: setKeyword
+      value: keyword.value

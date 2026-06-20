@@ -1,0 +1,22 @@
+id: opinetRegionSearch
+name: "지역코드 조회"
+attributes:
+  keyword:
+    schema:
+      type: object
+      properties:
+        value:
+          type: string
+          maxLength: 32
+      additionalProperties: false
+      required:
+        - value
+commands:
+  setKeyword:
+    name: setKeyword
+    arguments:
+      - name: keyword
+        optional: false
+        schema:
+          type: string
+          maxLength: 32

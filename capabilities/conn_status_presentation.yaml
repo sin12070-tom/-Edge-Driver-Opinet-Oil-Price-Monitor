@@ -1,0 +1,5 @@
+detailView:
+  - label: "연결 상태"
+    displayType: state
+    state:
+      label: "{{connStatus.value}}"

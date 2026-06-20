@@ -1,0 +1,13 @@
+detailView:
+  - label: "시군구별 주유소 평균가격"
+    displayType: state
+    state:
+      label: "{{sigunguAvg.value}}"
+automation:
+  conditions:
+    - label: "시군구별 주유소 평균가격"
+      displayType: numberField
+      numberField:
+        value: sigunguAvgNumeric.value
+        valueType: integer
+        range: [0, 100000]

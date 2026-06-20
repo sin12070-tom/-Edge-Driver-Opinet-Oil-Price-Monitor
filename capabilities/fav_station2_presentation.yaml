@@ -1,0 +1,13 @@
+detailView:
+  - label: "단골 주유소 2"
+    displayType: state
+    state:
+      label: "{{favStationTwo.value}}"
+automation:
+  conditions:
+    - label: "단골 주유소 2 가격"
+      displayType: numberField
+      numberField:
+        value: favStationTwoNumeric.value
+        valueType: integer
+        range: [0, 100000]

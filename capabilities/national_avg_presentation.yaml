@@ -1,0 +1,13 @@
+detailView:
+  - label: "전국 주유소 평균가격"
+    displayType: state
+    state:
+      label: "{{nationalAvg.value}}"
+automation:
+  conditions:
+    - label: "전국 주유소 평균가격"
+      displayType: numberField
+      numberField:
+        value: nationalAvgNumeric.value
+        valueType: integer
+        range: [0, 100000]

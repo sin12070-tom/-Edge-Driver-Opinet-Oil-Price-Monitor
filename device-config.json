@@ -1,0 +1,146 @@
+{
+  "dashboard": {
+    "states": [
+      {
+        "component": "main",
+        "capability": "insidehonest32774.opinetsigunguavgv2",
+        "version": 1
+      }
+    ],
+    "actions": []
+  },
+  "detailView": [
+    {
+      "component": "main",
+      "capability": "insidehonest32774.opinetstatus",
+      "version": 1
+    },
+    {
+      "component": "main",
+      "capability": "insidehonest32774.opinetnationalavgv2",
+      "version": 1
+    },
+    {
+      "component": "main",
+      "capability": "insidehonest32774.opinetsidoavgv2",
+      "version": 1
+    },
+    {
+      "component": "main",
+      "capability": "insidehonest32774.opinetsigunguavgv2",
+      "version": 1
+    },
+    {
+      "component": "main",
+      "capability": "insidehonest32774.opinetlowestpricev2",
+      "version": 1
+    },
+    {
+      "component": "main",
+      "capability": "insidehonest32774.opinetfavstation1v2",
+      "version": 1
+    },
+    {
+      "component": "main",
+      "capability": "insidehonest32774.opinetfavstation2v2",
+      "version": 1
+    },
+    {
+      "component": "search",
+      "capability": "insidehonest32774.opinetrefregion",
+      "version": 1
+    },
+    {
+      "component": "search",
+      "capability": "insidehonest32774.opinetregionsearch",
+      "version": 1
+    },
+    {
+      "component": "search",
+      "capability": "insidehonest32774.opinetstationsearch",
+      "version": 1
+    },
+    {
+      "component": "search",
+      "capability": "insidehonest32774.opinetregionresult",
+      "version": 1
+    },
+    {
+      "component": "main",
+      "capability": "refresh",
+      "version": 1
+    }
+  ],
+  "automation": {
+    "conditions": [
+      {
+        "component": "main",
+        "capability": "insidehonest32774.opinetstatus",
+        "version": 1
+      },
+      {
+        "component": "main",
+        "capability": "insidehonest32774.opinetnationalavgv2",
+        "version": 1,
+        "excludes": [ "nationalAvg" ]
+      },
+      {
+        "component": "main",
+        "capability": "insidehonest32774.opinetsidoavgv2",
+        "version": 1,
+        "excludes": [ "sidoAvg" ]
+      },
+      {
+        "component": "main",
+        "capability": "insidehonest32774.opinetsigunguavgv2",
+        "version": 1,
+        "excludes": [ "sigunguAvg" ]
+      },
+      {
+        "component": "main",
+        "capability": "insidehonest32774.opinetlowestpricev2",
+        "version": 1,
+        "excludes": [ "lowestPrice" ]
+      },
+      {
+        "component": "main",
+        "capability": "insidehonest32774.opinetfavstation1v2",
+        "version": 1,
+        "excludes": [ "favStationOne" ]
+      },
+      {
+        "component": "main",
+        "capability": "insidehonest32774.opinetfavstation2v2",
+        "version": 1,
+        "excludes": [ "favStationTwo" ]
+      },
+      {
+        "component": "search",
+        "capability": "insidehonest32774.opinetrefregion",
+        "version": 1
+      },
+      {
+        "component": "search",
+        "capability": "insidehonest32774.opinetregionresult",
+        "version": 1
+      }
+    ],
+    "actions": [
+      {
+        "component": "search",
+        "capability": "insidehonest32774.opinetregionsearch",
+        "version": 1
+      },
+      {
+        "component": "search",
+        "capability": "insidehonest32774.opinetstationsearch",
+        "version": 1
+      },
+      {
+        "component": "main",
+        "capability": "refresh",
+        "version": 1
+      }
+    ]
+  }
+}

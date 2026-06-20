@@ -1,0 +1,7 @@
+tag: ko
+label: "전국 주유소 평균가격"
+attributes:
+  nationalAvg:
+    label: "전국 주유소 평균가격"
+  nationalAvgNumeric:
+    label: "전국 주유소 평균가격"

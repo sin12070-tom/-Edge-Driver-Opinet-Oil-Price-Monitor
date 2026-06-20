@@ -1,0 +1,23 @@
+id: opinetStationSearch
+name: "opinetStationSearch"
+attributes:
+  stationKeyword:
+    schema:
+      type: object
+      properties:
+        value:
+          type: string
+          maxLength: 32
+      additionalProperties: false
+      required:
+        - value
+commands:
+  setStationKeyword:
+    name: setStationKeyword
+    arguments:
+      - name: stationKeyword
+        optional: false
+        schema:
+          type: string
+          maxLength: 32
+    sensitive: false

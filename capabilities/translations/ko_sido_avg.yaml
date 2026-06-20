@@ -1,0 +1,7 @@
+tag: ko
+label: "시도별 주유소 평균가격"
+attributes:
+  sidoAvg:
+    label: "시도별 주유소 평균가격"
+  sidoAvgNumeric:
+    label: "시도별 주유소 평균가격"

@@ -1,0 +1,8 @@
+detailView:
+  - label: "주유소코드 조회"
+    displayType: textField
+    textField:
+      command: setStationKeyword
+      argumentType: string
+      value: stationKeyword.value
+      valueType: string

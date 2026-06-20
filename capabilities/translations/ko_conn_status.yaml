@@ -1,0 +1,5 @@
+tag: ko
+label: "연결 상태"
+attributes:
+  connStatus:
+    label: "연결 상태"

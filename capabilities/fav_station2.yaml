@@ -1,0 +1,24 @@
+id: opinetFavStation2v2
+name: "opinetFavStation2v2"
+attributes:
+  favStationTwo:
+    schema:
+      type: object
+      properties:
+        value:
+          type: string
+          maxLength: 128
+      additionalProperties: false
+      required:
+        - value
+  favStationTwoNumeric:
+    schema:
+      type: object
+      properties:
+        value:
+          type: integer
+          minimum: 0
+          maximum: 100000
+      additionalProperties: false
+      required:
+        - value

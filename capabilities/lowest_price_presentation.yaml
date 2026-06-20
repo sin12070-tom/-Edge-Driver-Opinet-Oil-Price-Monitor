@@ -1,0 +1,13 @@
+detailView:
+  - label: "지역별 최저가 주유소"
+    displayType: state
+    state:
+      label: "{{lowestPrice.value}}"
+automation:
+  conditions:
+    - label: "지역별 최저가 주유소 가격"
+      displayType: numberField
+      numberField:
+        value: lowestPriceNumeric.value
+        valueType: integer
+        range: [0, 100000]

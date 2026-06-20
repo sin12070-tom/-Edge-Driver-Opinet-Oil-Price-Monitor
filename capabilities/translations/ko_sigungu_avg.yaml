@@ -1,0 +1,7 @@
+tag: ko
+label: "시군구 주유소 평균가격"
+attributes:
+  sigunguAvg:
+    label: "시군구 주유소 평균가격"
+  sigunguAvgNumeric:
+    label: "시군구 주유소 평균가격"

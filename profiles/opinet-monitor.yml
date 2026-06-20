@@ -1,0 +1,149 @@
+name: opinet-monitor
+status: DEVELOPMENT
+components:
+  - id: main
+    label: 오피넷 유가정보 모니터
+    description: 오피넷 API 기반 유가 정보
+    capabilities:
+      - id: insidehonest32774.opinetstatus
+        version: 1
+      - id: insidehonest32774.opinetnationalavgv2
+        version: 1
+      - id: insidehonest32774.opinetsidoavgv2
+        version: 1
+      - id: insidehonest32774.opinetsigunguavgv2
+        version: 1
+      - id: insidehonest32774.opinetlowestpricev2
+        version: 1
+      - id: insidehonest32774.opinetfavstation1v2
+        version: 1
+      - id: insidehonest32774.opinetfavstation2v2
+        version: 1
+      - id: refresh
+        version: 1
+    categories:
+      - name: Networking
+  - id: search
+    label: 설정 값 & 코드 조회
+    description: 설정 및 코드 조회 메뉴
+    capabilities:
+      - id: insidehonest32774.opinetrefregion
+        version: 1
+      - id: insidehonest32774.opinetregionsearch
+        version: 1
+      - id: insidehonest32774.opinetstationsearch
+        version: 1
+      - id: insidehonest32774.opinetregionresult
+        version: 1
+preferences:
+  - name: aebAutoSearch
+    title: "AEB 자동 검색(mDNS)"
+    description: "mDNS를 사용하여 Android Edge Bridge를 자동으로 찾습니다."
+    required: true
+    preferenceType: boolean
+    definition:
+      default: true
+
+  - name: aebIp
+    title: "AEB 주소(자동 검색 끔 선택시)"
+    description: "자동 검색 비활성화 시 사용됩니다. (예: 192.168.0.100)"
+    required: false
+    preferenceType: string
+    definition:
+      stringType: text
+      default: ""
+      minLength: 0
+      maxLength: 30
+
+  - name: aebPort
+    title: "AEB 포트번호"
+    description: "자동 검색 비활성화 시 사용됩니다. (기본값: 8088)"
+    required: false
+    preferenceType: integer
+    definition:
+      default: 8088
+      minimum: 1
+      maximum: 65535
+
+  - name: opinetApiKey
+    title: "오피넷 API Key"
+    description: "오피넷에서 발급받은 API Key"
+    required: true
+    preferenceType: string
+    definition:
+      stringType: text
+      default: ""
+      minLength: 0
+      maxLength: 20
+
+  - name: sidoCode
+    title: "시도코드 (2자리)"
+    description: "전국 평균 및 지역 평균 조회용 시도코드 (예: 서울=01, 경기=02)"
+    required: true
+    preferenceType: string
+    definition:
+      stringType: text
+      default: "01"
+      minLength: 2
+      maxLength: 2
+
+  - name: sigunguCode
+    title: "시군구코드 (4자리)"
+    description: "시군구 평균 및 최저가 주유소 조회용 코드 (예: 종로구=0101, 강남구=0103)"
+    required: true
+    preferenceType: string
+    definition:
+      stringType: text
+      default: "0101"
+      minLength: 4
+      maxLength: 4
+
+  - name: oilType
+    title: "유종 선택"
+    description: "조회할 유종을 설정합니다."
+    required: true
+    preferenceType: enumeration
+    definition:
+      default: "B027"
+      options:
+        B027: "일반휘발유"
+        B034: "고급휘발유"
+        D047: "경유"
+        C004: "등유"
+        K015: "LPG"
+
+  - name: favGasStation1
+    title: "단골 주유소 1 코드"
+    description: "가격을 조회할 단골 주유소 1 ID (예: A0002517)"
+    required: false
+    preferenceType: string
+    definition:
+      stringType: text
+      default: ""
+      minLength: 0
+      maxLength: 10
+
+  - name: favGasStation2
+    title: "단골 주유소 2 코드"
+    description: "가격을 조회할 단골 주유소 2 ID (예: A0002517)"
+    required: false
+    preferenceType: string
+    definition:
+      stringType: text
+      default: ""
+      minLength: 0
+      maxLength: 10
+
+  - name: refreshInterval
+    title: "새로고침 주기 (분)"
+    description: "유가 정보 자동 갱신 주기 (1 ~ 60분)"
+    required: true
+    preferenceType: integer
+    definition:
+      default: 60
+      minimum: 1
+      maximum: 60
+
+metadata:
+  vid: 55bf0831-1ae2-3d61-8cb3-ec233a24bf09
+  mnmn: SmartThingsCommunity

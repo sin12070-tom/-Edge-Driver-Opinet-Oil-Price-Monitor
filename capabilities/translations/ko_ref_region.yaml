@@ -1,0 +1,5 @@
+tag: ko
+label: "기준 지역"
+attributes:
+  refRegion:
+    label: "기준 지역"

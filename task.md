@@ -1,0 +1,10 @@
+- [x] 커스텀 카파빌리티 정의 파일 생성 (`conn_status.yaml`, `conn_status_presentation.yaml`)
+- [x] `create_capabilities.sh` 스크립트 수정 (신규 카파빌리티 및 번역 리소스 등록 추가)
+- [x] `profiles/opinet-monitor.yml` 프로필 수정 (구역 1 맨 처음에 `opinetconnstatus` 추가)
+- [x] `device-config.json` 프레젠테이션 수정 (1구역 맨 처음에 `opinetconnstatus` 배치)
+- [x] `create_capabilities.sh` 실행하여 카파빌리티 등록, 번역 업로드, 디바이스 프레젠테이션 생성 및 VID 업데이트
+- [x] `src/init.lua` 루아 소스코드 로직 수정
+  - `opinetconnstatus` 바인딩 및 `device_init` 초기화
+  - `update_connection_status` 구현 및 `poll_handler` 초입에 호출
+- [x] 드라이버 최종 패키징 및 배포 (`smartthings edge:drivers:package`)
+- [x] 채널 할당 및 허브 설치 (`smartthings edge:channels:assign` 및 `edge:drivers:install`)

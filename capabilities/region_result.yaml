@@ -1,0 +1,13 @@
+id: opinetRegionResult
+name: "조회 결과"
+attributes:
+  searchResult:
+    schema:
+      type: object
+      properties:
+        value:
+          type: string
+          maxLength: 255
+      additionalProperties: false
+      required:
+        - value

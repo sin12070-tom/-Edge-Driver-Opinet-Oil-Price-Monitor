@@ -1,0 +1,13 @@
+id: opinetRefRegion
+name: "opinetRefRegion"
+attributes:
+  refRegion:
+    schema:
+      type: object
+      properties:
+        value:
+          type: string
+          maxLength: 128
+      additionalProperties: false
+      required:
+        - value

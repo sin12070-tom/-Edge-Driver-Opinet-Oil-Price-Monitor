@@ -1,0 +1,5 @@
+tag: ko
+label: "조회 결과"
+attributes:
+  searchResult:
+    label: "조회 결과"

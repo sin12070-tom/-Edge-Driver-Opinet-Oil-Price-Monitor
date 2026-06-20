@@ -1,0 +1,7 @@
+tag: ko
+label: "지역별 최저가 주유소"
+attributes:
+  lowestPrice:
+    label: "지역별 최저가 주유소"
+  lowestPriceNumeric:
+    label: "지역별 최저가 주유소"

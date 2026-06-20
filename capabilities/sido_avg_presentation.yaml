@@ -1,0 +1,13 @@
+detailView:
+  - label: "시도별 주유소 평균가격"
+    displayType: state
+    state:
+      label: "{{sidoAvg.value}}"
+automation:
+  conditions:
+    - label: "시도별 주유소 평균가격"
+      displayType: numberField
+      numberField:
+        value: sidoAvgNumeric.value
+        valueType: integer
+        range: [0, 100000]

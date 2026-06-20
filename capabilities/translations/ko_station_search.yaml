@@ -1,0 +1,5 @@
+tag: ko
+label: "주유소코드 조회"
+attributes:
+  stationKeyword:
+    label: "주유소코드 조회"

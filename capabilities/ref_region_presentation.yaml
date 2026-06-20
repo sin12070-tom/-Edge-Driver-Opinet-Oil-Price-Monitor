@@ -1,0 +1,5 @@
+detailView:
+  - label: "기준 지역"
+    displayType: state
+    state:
+      label: "{{refRegion.value}}"

@@ -1,0 +1,24 @@
+id: opinetSigunguAvgv2
+name: "opinetSigunguAvgv2"
+attributes:
+  sigunguAvg:
+    schema:
+      type: object
+      properties:
+        value:
+          type: string
+          maxLength: 128
+      additionalProperties: false
+      required:
+        - value
+  sigunguAvgNumeric:
+    schema:
+      type: object
+      properties:
+        value:
+          type: integer
+          minimum: 0
+          maximum: 100000
+      additionalProperties: false
+      required:
+        - value
